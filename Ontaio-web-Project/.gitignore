@@ -1,0 +1,21 @@
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+/build/*
+/node_modules
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+#service
+/node_modules/*
+dist/*
+/uploads/
+/.env
+/yarn.lock

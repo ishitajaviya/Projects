@@ -1,0 +1,123 @@
+.button {
+  display: flex;
+  height: 58px;
+  align-items: center;
+  border-radius: 3rem;
+  background-color: #529ac4;
+  padding: 0 1.5rem;
+  box-shadow: 0 0 2px 2px #00000025;
+  width: max-content;
+  transition: width 0.3s;
+
+  .container {
+    display: inline-block;
+    height: 58px;
+    line-height: 1.25rem;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    transition: 0.3s;
+    font-family: Roobert-Regular;
+    font-weight: 600;
+    text-transform: none;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+
+  .label-up {
+    color: white;
+    display: block;
+    height: 100%;
+    position: relative;
+    top: 0%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+  }
+
+  svg {
+    margin-left: 0.5rem;
+    transition: 0.5s;
+  }
+}
+
+.button:hover {
+  background:
+    #529ac4;
+
+  .label-up {
+    top: -100%;
+    color: white;
+  }
+
+  svg {
+    transform: translateX(10px);
+  }
+}
+
+.button2 {
+  background: transparent;
+  border: 1px solid white;
+
+  svg {
+    opacity: 0;
+    margin-left: 0.5rem;
+    transition: opacity 0.1s, position 0.5s, transform 0.5s;
+    position: absolute;
+  }
+}
+
+.button2:hover {
+  background: #fff;
+
+  .label-up {
+    top: -100%;
+    color: #000;
+  }
+
+  svg {
+    position: relative;
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+
+.button3 {
+  background: '#529ac4';
+  box-shadow: none;
+
+  svg {
+    opacity: 0;
+    margin-left: 0.5rem;
+    transition: opacity 0.1s, position 0.5s, transform 0.5s;
+    position: absolute;
+  }
+}
+
+.button3:hover {
+  background: #64adcf;
+  border: 2px solid #529ac4;
+
+  .label-up {
+    top: -100%;
+    color: white;
+  }
+
+  svg {
+    position: relative;
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+
+@media (max-width: 900px) {
+  .button {
+    height: 45px;
+
+    .container {
+      font-size: 0.95rem;
+      height: 45px;
+      // line-height: 1.25rem;
+    }
+  }
+}
